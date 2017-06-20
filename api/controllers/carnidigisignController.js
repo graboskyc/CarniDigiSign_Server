@@ -42,7 +42,7 @@ exports.read_a_screen = function(req, res) {
 
 
 exports.update_a_screen = function(req, res) {
-  Screen.findOneAndUpdate(req.params.screenId, req.body, {new: true}, function(err, s) {
+  Screen.findOneAndUpdate({_id: req.params.screenId}, req.body, {new: true}, function(err, s) {
     if (err)
       res.send(err);
     res.json(s);
