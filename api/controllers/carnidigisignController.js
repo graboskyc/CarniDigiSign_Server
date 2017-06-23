@@ -59,3 +59,11 @@ exports.delete_a_screen = function(req, res) {
     res.json({ message: 'Screen successfully deleted' });
   });
 };
+
+ exports.list_screens_by_feed = function(req, res) {
+  Screen.find({feed: req.params.feedId}, function(err, s) {
+    if (err)
+      res.send(err);
+    res.json(s);
+  });
+};
