@@ -12,7 +12,4 @@ module.exports = function(app) {
     .put(sign.update_a_screen)
     .delete(sign.delete_a_screen);
 
-  app.route('/feeds/:feedId')
-    .get(sign.list_screens_by_feed);
-
 };
