@@ -1,5 +1,11 @@
 # CarniDigiSign_Server
 
+# LEGACY
+
+This is no longer needed as the core server functionality has been moved to MongoDB Atlas and Stitch
+
+## No longer use but here for legacy reasons...
+
 This repo is part of a three piece solution. 
 
 Pieces are:
